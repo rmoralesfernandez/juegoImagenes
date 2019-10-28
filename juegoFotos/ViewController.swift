@@ -9,8 +9,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var ImageCenter: UIImageView!
     var images: [UIImage] = [#imageLiteral(resourceName: "cyndaquil"), #imageLiteral(resourceName: "metapod"), #imageLiteral(resourceName: "diglet"), #imageLiteral(resourceName: "mario"), #imageLiteral(resourceName: "pikachu"), #imageLiteral(resourceName: "magikarp"), #imageLiteral(resourceName: "pidgey"), #imageLiteral(resourceName: "zapdos"), #imageLiteral(resourceName: "rattata")]
     
+    
+    
     var ordenAleatorio: [Int] = []
-    var numberPhotos: Int = 3
+    var numberPhotos: Int = 7
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,7 @@ class ViewController: UIViewController {
     }
     
     func imgRandom(){
-        for i in 1...8 {
+        for i in 0...8 {
             ordenAleatorio.append(i)
         }
          ordenAleatorio.shuffle()

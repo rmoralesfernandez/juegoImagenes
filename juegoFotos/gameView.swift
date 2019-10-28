@@ -1,5 +1,8 @@
 import UIKit
 
+var i = 0
+var eresmonguer = 10
+
 class gameView: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var images: [UIImage] = [#imageLiteral(resourceName: "cyndaquil"), #imageLiteral(resourceName: "metapod"), #imageLiteral(resourceName: "diglet"), #imageLiteral(resourceName: "mario"), #imageLiteral(resourceName: "pikachu"), #imageLiteral(resourceName: "magikarp"), #imageLiteral(resourceName: "pidgey"), #imageLiteral(resourceName: "zapdos"), #imageLiteral(resourceName: "rattata")]
@@ -7,6 +10,8 @@ class gameView: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     @IBOutlet weak var Micelda: UIImageView!
     @IBOutlet weak var CollectionView: UICollectionView!
     @IBOutlet weak var NumSelect: UILabel!
+    @IBOutlet weak var winView: UILabel!
+    @IBOutlet weak var lostVieh: UILabel!
     
     
     
@@ -26,16 +31,29 @@ class gameView: UIViewController, UICollectionViewDataSource, UICollectionViewDe
         celda.imagen.image = images[indexPath.row]
         return celda
     }
-    
-    @IBAction func GoBack(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+
     
     internal func collectionView(_ collectionview: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
         NumSelect.text = String(indexPath.row+1)
-        print(imgGuardar)
+        
+        if images[indexPath.row] == imgGuardar[0]{
+            imgGuardar.remove(at: 0)
+            i += 1
+            images.remove(at: indexPath.row)
+            collectionview.reloadData()
+        } else {
+            eresmonguer -= 1
+        }
+        
+        if i == 7 && eresmonguer > 0 || eresmonguer == 0{
+            performSegue(withIdentifier: "End", sender: nil)
+            
+        }
     }
     
+    func finish() {
+        dismiss(animated: true, completion: nil)
+    }
     
 }
