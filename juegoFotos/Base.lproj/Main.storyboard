@@ -79,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuerda la secuencia de imagenes " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHB-Ei-4WR">
-                                <rect key="frame" x="50" y="104" width="310" height="23"/>
+                                <rect key="frame" x="50" y="104" width="310" height="121"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -101,6 +101,9 @@
                             <constraint firstItem="haz-gA-6O2" firstAttribute="centerX" secondItem="fHB-Ei-4WR" secondAttribute="centerX" id="C4A-Uj-ndh"/>
                             <constraint firstItem="fHB-Ei-4WR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Rgp-1K-3MB">
                                 <variation key="heightClass=compact-widthClass=regular" constant="250"/>
+                            </constraint>
+                            <constraint firstItem="haz-gA-6O2" firstAttribute="top" secondItem="fHB-Ei-4WR" secondAttribute="bottom" constant="50" id="bNd-fR-6ad">
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                             </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="haz-gA-6O2" secondAttribute="bottom" constant="249" id="bvA-kh-amn">
                                 <variation key="heightClass=compact-widthClass=regular" constant="40"/>
@@ -194,7 +197,9 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="50"/>
                             </constraint>
                             <constraint firstItem="ChM-dq-qm4" firstAttribute="leading" secondItem="30S-Kd-THM" secondAttribute="leading" id="DLg-Lr-hzK"/>
-                            <constraint firstItem="ChM-dq-qm4" firstAttribute="top" secondItem="30S-Kd-THM" secondAttribute="bottom" constant="30" id="Ulf-vX-twS"/>
+                            <constraint firstItem="ChM-dq-qm4" firstAttribute="top" secondItem="30S-Kd-THM" secondAttribute="bottom" constant="30" id="Ulf-vX-twS">
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
                             <constraint firstItem="eyN-NH-87c" firstAttribute="centerX" secondItem="ChM-dq-qm4" secondAttribute="centerX" id="VuL-C4-rhT"/>
                             <constraint firstItem="mkW-gt-2pC" firstAttribute="bottom" secondItem="eyN-NH-87c" secondAttribute="bottom" constant="148" id="h42-xL-QDY">
                                 <variation key="heightClass=compact-widthClass=regular" constant="10"/>
@@ -223,24 +228,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="win" translatesAutoresizingMaskIntoConstraints="NO" id="VhS-By-mup">
-                                <rect key="frame" x="0.0" y="44" width="414" height="600"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="400"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="dVH-ci-rTh">
+                                    <constraint firstAttribute="height" constant="400" id="dVH-ci-rTh">
                                         <variation key="heightClass=compact-widthClass=regular" constant="250"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="xPP-jb-77b">
-                                <rect key="frame" x="0.0" y="694" width="414" height="168"/>
+                                <rect key="frame" x="0.0" y="494" width="414" height="368"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quieres volver a jugar??" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHS-su-CQj">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Quieres volver a jugar??" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHS-su-CQj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="259"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQc-1W-caV">
-                                        <rect key="frame" x="0.0" y="89" width="414" height="79"/>
+                                        <rect key="frame" x="0.0" y="318" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qOd-Kq-Ait"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="Jugar de nuevo"/>
                                         <connections>
