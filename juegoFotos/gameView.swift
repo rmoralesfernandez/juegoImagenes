@@ -46,7 +46,7 @@ class gameView: UIViewController, UICollectionViewDataSource, UICollectionViewDe
             eresmonguer -= 1
         }
         
-        if i == 7 && eresmonguer > 0 || eresmonguer == 0{
+        if i == numberPhotos && eresmonguer > 0 || eresmonguer == 0{
             performSegue(withIdentifier: "End", sender: nil)
             
         }

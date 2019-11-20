@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F10065C23605CFC00D40EC3 /* EndGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10065B23605CFC00D40EC3 /* EndGame.swift */; };
+		7F51C87723740C6B00C6D64F /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51C87623740C6B00C6D64F /* StartView.swift */; };
 		7FAC5C2B235EEFE00080CFF6 /* MiCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC5C2A235EEFE00080CFF6 /* MiCelda.swift */; };
 		7FB88FFC2354585300300175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88FFB2354585300300175 /* AppDelegate.swift */; };
 		7FB88FFE2354585300300175 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88FFD2354585300300175 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		7F10065B23605CFC00D40EC3 /* EndGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGame.swift; sourceTree = "<group>"; };
+		7F51C87623740C6B00C6D64F /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		7FAC5C2A235EEFE00080CFF6 /* MiCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiCelda.swift; sourceTree = "<group>"; };
 		7FB88FF82354585300300175 /* juegoFotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = juegoFotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB88FFB2354585300300175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				7FB88FFB2354585300300175 /* AppDelegate.swift */,
 				7FB88FFD2354585300300175 /* ViewController.swift */,
 				7FB88FFF2354585300300175 /* Main.storyboard */,
+				7F51C87623740C6B00C6D64F /* StartView.swift */,
 				7FB8900D23546A7600300175 /* gameView.swift */,
 				7FB890022354585400300175 /* Assets.xcassets */,
 				7FB890042354585400300175 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				7FB8900E23546A7600300175 /* gameView.swift in Sources */,
 				7FB88FFE2354585300300175 /* ViewController.swift in Sources */,
 				7FB88FFC2354585300300175 /* AppDelegate.swift in Sources */,
+				7F51C87723740C6B00C6D64F /* StartView.swift in Sources */,
 				7FAC5C2B235EEFE00080CFF6 /* MiCelda.swift in Sources */,
 				7F10065C23605CFC00D40EC3 /* EndGame.swift in Sources */,
 			);

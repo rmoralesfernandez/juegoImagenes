@@ -13,7 +13,7 @@ class EndGame: UIViewController {
     
     func mostrar () {
 
-        if i == 7 && eresmonguer > 0{
+        if i == numberPhotos && eresmonguer > 0{
             WinImage.image = #imageLiteral(resourceName: "win")
         } else if  eresmonguer == 0 {
             WinImage.image = #imageLiteral(resourceName: "lost")
@@ -23,6 +23,8 @@ class EndGame: UIViewController {
    
     @IBAction func tryAgain(_ sender: Any) {
         imgGuardar.removeAll()
+        eresmonguer = 6
+        i = 0
 
     }
     

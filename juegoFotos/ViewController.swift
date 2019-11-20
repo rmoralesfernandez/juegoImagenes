@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     
     var ordenAleatorio: [Int] = []
-    var numberPhotos: Int = 7
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +31,12 @@ class ViewController: UIViewController {
     func show(){
         var i = 0
         Timer.scheduledTimer(withTimeInterval: 1.5, repeats: true, block: { timer in
-            if i < self.numberPhotos {
+            if i < numberPhotos {
                 self.ImageCenter.image = self.images[self.ordenAleatorio[i]]
                 imgGuardar.append(self.ImageCenter.image!)
             }
             i+=1
-            if i > self.numberPhotos {
+            if i > numberPhotos {
                 self.performSegue(withIdentifier: "ShowPass", sender: nil)
             }
         })
